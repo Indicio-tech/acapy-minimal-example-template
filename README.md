@@ -10,7 +10,7 @@ To run the existing example which simply connects to ACA-Py instances:
 
 ```sh
 docker-compose build
-docker-compose run example
+docker-compose run --rm example
 # Clean up
 docker-compose down -v
 ```

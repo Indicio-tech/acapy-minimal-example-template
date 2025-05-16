@@ -17,7 +17,6 @@ BOB = getenv("BOB", "http://bob:3001")
 async def main():
     """Test Controller protocols."""
     async with Controller(base_url=ALICE) as alice, Controller(base_url=BOB) as bob:
-        await connection(alice, bob)
         await didexchange(alice, bob)
 
 
